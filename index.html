@@ -3,22 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min første side</title>
+    <title>Læreren's Hjemmeside</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hei, verden!</h1>
-    <ul>
-        <li>HTML</li>
-        <li>Litt Python</li>
-        <li>Bygge PC</li>
-    </ul>
-    <h2>Undertittel</h2>
-        <ol>
-            <li>Lære Git</li>
-            <li>Lage egen <strong>nettside</strong></li>
-            <li>Sette opp en <em>server</em></li>
-        </ol>
-    <p>Ren tekst</p>
-    <!--En liten kommentar-->
+
+    <header>
+        <h1>Læreren's Hjemmeside</h1>
+        <nav>
+            <a href="#om">Om meg</a>
+            <a href="#prosjekter">Prosjekter</a>
+            <a href="#tekst">Tekst</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="om">
+        <h2>Om meg</h2>
+            <ul class="uthevet">
+                <li>Navn: Lærer'n</li>
+                <li>Yrke: Lærer</li>
+                <li>Liker å skrive kode</li>
+            </ul>
+            <img src="bilder/pokemons/ShinyMew.webp" alt="Pokemonen Mew, i shiny variant med blå farge" width="200" height="200">
+
+        </section>
+        <section id="prosjekter">
+            <h2>Mine prosjekter</h2>
+            <ol>
+                <li><a href="https://github.com/Zuparo1">Min GitHub</a></li>
+                <li>Git</li>
+                <li>Egen <strong>nettside</strong></li>
+                <li>Sette opp en <em>server</em></li>
+            </ol>
+        </section>
+        <!--Denne teksten er skrevet av KI-->
+        <p id="tekst">
+            Her kan man legge til litt tekst om seg selv. <br>
+            Denne teksten kan være om hva man liker å gjøre, hva man er god til, eller hva man ønsker å lære mer om.
+        </p>
+
+        <p class="uthevet">Mer tekst, her med klassen <strong>"uthevet"</strong></p>
+    </main> 
+    
+    <footer>
+        <p id="copyright">Laget av en lærer'n, 2026</p>
+    </footer>
+
 </body>
-</html>
+
+</html>  
